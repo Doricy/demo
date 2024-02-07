@@ -6,6 +6,10 @@ describe('Form Testing', () => {
 
     // Fill the text fields
     cy.get('#userName').type('doris addai gyebi');
+    cy.get('#userEmail').type('doricyj@gmail.com');
+    cy.get('#currentAddress').type('Fijai Hills');
+    cy.get('#permanentAddress').type('Takoradi');
+
 
     
   });
