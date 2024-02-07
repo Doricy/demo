@@ -10,7 +10,12 @@ describe('Form Testing', () => {
     cy.get('#currentAddress').type('Fijai Hills');
     cy.get('#permanentAddress').type('Takoradi');
 
+        // Submit the form
+        cy.get('form').submit();
+  
 
+        // Assert that the result is displayed correctly
+        cy.get('.success-message').should('be.visible');
     
   });
 });
